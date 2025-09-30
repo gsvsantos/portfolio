@@ -1,0 +1,48 @@
+@use '../../../variaveis' as *;
+
+.sidebar {
+  color: $branco-1;
+  background: $fundo-2;
+  border: 1px solid $borda-1;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: $sombra-1;
+  transition: $transition-1;
+  max-width: 25vh;
+}
+
+.img-avatar {
+  background: $fundo-gradient-onyx;
+  border-radius: 0.94rem;
+  text-align: center;
+}
+
+.img-avatar img {
+  width: 15vh;
+}
+
+.sobremim {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobremim .texto-sobremim {
+  color: $branco-2;
+}
+
+.sobremim .nome {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contato {
+  display: block;
+}
+
+.contato .titulo-contato {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}

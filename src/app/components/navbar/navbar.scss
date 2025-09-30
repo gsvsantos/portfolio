@@ -1,0 +1,24 @@
+@use '../../../variaveis' as *;
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: $branco-1;
+    text-decoration: none;
+    transition: $transition-1;
+
+    &:hover {
+        color: $hover-1;
+    }
+}

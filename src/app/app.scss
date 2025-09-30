@@ -1,0 +1,29 @@
+@use '../variaveis' as *;
+
+.main {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.56rem;
+  height: 100%;
+}
+
+.card {
+  color: $branco-1;
+  background: $fundo-2;
+  border: 1px solid $borda-1;
+  border-radius: 0.62rem;
+  padding: 0.94rem;
+  box-shadow: $sombra-1;
+  z-index: 1;
+  width: 62.5rem;
+  height: 50rem;
+}
+
+.teste {
+  display: flex;
+  gap: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
