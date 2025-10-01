@@ -70,7 +70,7 @@
         "deploy": {
           "builder": "@angular/build:extract-i18n",
           "options": {
-            "baseHref": "https://gsvsantos.github.io/portfolio",
+            "baseHref": "https://gsvsantos.github.io/portfolio/",
             "repo": "https://github.com/gsvsantos/portfolio",
             "name": "Gustavo Santos",
             "email": "gustavocnsantos02@gmail.com"
