@@ -4,9 +4,14 @@
   display: flex;
   margin-inline: auto;
   justify-content: center;
-  align-items: stretch;
-  gap: 1.56rem;
   height: 100%;
+}
+
+.teste {
+  display: flex;
+  gap: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card {
@@ -16,14 +21,6 @@
   border-radius: 0.62rem;
   padding: 0.94rem;
   box-shadow: $sombra-1;
-  z-index: 1;
-  width: 62.5rem;
-  height: 50rem;
-}
-
-.teste {
-  display: flex;
-  gap: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
+  max-width: 50rem;
+  max-height: 50rem;
 }

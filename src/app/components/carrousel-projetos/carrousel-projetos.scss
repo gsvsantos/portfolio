@@ -1,0 +1,8 @@
+@use 'bootstrap';
+
+.carousel-inner,
+.carousel-item {
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 250px;
+}
