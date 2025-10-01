@@ -28,7 +28,8 @@
               }
             ],
             "styles": ["src/styles.scss"],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"],
+            "outputPath": "dist/portfolio"
           },
           "configurations": {
             "production": {
@@ -66,6 +67,15 @@
           },
           "defaultConfiguration": "development"
         },
+        "deploy": {
+          "builder": "@angular/build:extract-i18n",
+          "options": {
+            "baseHref": "https://gsvsantos.github.io/portfolio",
+            "repo": "https://github.com/gsvsantos/portfolio",
+            "name": "Gustavo Santos",
+            "email": "gustavocnsantos02@gmail.com"
+          }
+        },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"
         },
@@ -83,6 +93,9 @@
             ],
             "styles": ["src/styles.scss"]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
