@@ -18,7 +18,7 @@
 }
 
 .img-avatar img {
-  width: 15vh;
+  width: 15dvh;
 }
 
 .sobremim {
@@ -26,11 +26,8 @@
   flex-direction: column;
 }
 
-.sobremim .texto-sobremim {
-  color: $branco-2;
-}
-
 .sobremim .nome {
+  align-self: center;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -39,10 +36,31 @@
   display: block;
 }
 
+.contato-infos {
+  display: flex;
+  flex-direction: column;
+}
+
 .contato .titulo-contato {
   display: flex;
   justify-content: center;
   justify-self: center;
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.numero-contato,
+.email-contato,
+.local-contato,
+.social-contato {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.bi-github, .bi-linkedin,
+.bi-telephone, .bi-envelope-at, .bi-pin-map {
+    font-size: 1.45rem;
+    color: #ffffff
 }
