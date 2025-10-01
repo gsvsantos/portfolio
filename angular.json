@@ -68,7 +68,7 @@
           "defaultConfiguration": "development"
         },
         "deploy": {
-          "builder": "@angular/build:extract-i18n",
+          "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "https://gsvsantos.github.io/portfolio/",
             "repo": "https://github.com/gsvsantos/portfolio",
@@ -93,9 +93,6 @@
             ],
             "styles": ["src/styles.scss"]
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
