@@ -1,5 +1,12 @@
 @use '../../../variaveis' as *;
 
+.sidebar-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .sidebar {
   color: $branco-1;
   background: $fundo-2;
@@ -8,7 +15,7 @@
   padding: 1.25rem;
   box-shadow: $sombra-1;
   transition: $transition-1;
-  max-width: 25vh;
+  max-width: clamp(16.25rem, calc(19vw + 1rem), 21.25rem);
 }
 
 .img-avatar {
@@ -18,7 +25,7 @@
 }
 
 .img-avatar img {
-  width: 15dvh;
+  width: 20dvh;
 }
 
 .sobremim {
@@ -57,6 +64,17 @@
   gap: 0.6rem;
   align-items: center;
   margin-bottom: 0.4rem;
+  min-width: 0;
+}
+
+.numero-contato > span,
+.email-contato > span,
+.local-contato > span {
+  display: block;
+  min-width: 0; 
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .bi-github, .bi-linkedin,
