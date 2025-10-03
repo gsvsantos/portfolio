@@ -39,6 +39,7 @@
   background: $superficie-destaque;
   border: $sidebar-borda-largura solid $borda;
   border-radius: 1.25rem;
+  transition: $transicao;
 }
 
 .lista-item-link {
@@ -62,10 +63,14 @@
   text-align: center;
 }
 
+.lista-item:hover {
+  transform: scale(1.05);
+}
+
 .projetos-botao {
   display: flex;
   justify-content: center;
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
 }
 
 .projetos-botao > a > span {

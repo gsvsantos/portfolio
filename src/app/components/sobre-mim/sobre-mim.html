@@ -21,34 +21,20 @@
     </div>
     <div class="projetos-itens">
       <ul class="lista-projetos">
-        <li class="lista-item">
-          <a class="lista-item-link" href="">
-            <img class="lista-item-img" src="https://i.imgur.com/eKoM8DM.gif" alt="" />
-            <div class="lista-item-textos">
-              <h3>Gerador de Testes</h3>
-            </div>
-          </a>
-        </li>
-        <li class="lista-item">
-          <a class="lista-item-link" href="">
-            <img class="lista-item-img" src="https://i.imgur.com/tIFABjc.gif" alt="" />
-            <div class="lista-item-textos">
-              <h3>Web API Multi-Tenant</h3>
-            </div>
-          </a>
-        </li>
-        <li class="lista-item">
-          <a class="lista-item-link" href="">
-            <img
-              class="lista-item-img"
-              src="https://placehold.co/1200x800?text=Em Desenvolvimento"
-              alt=""
-            />
-            <div class="lista-item-textos">
-              <h3>Frontend em Angular</h3>
-            </div>
-          </a>
-        </li>
+        @for (item of itensProjetos; track $index) {
+          <li class="lista-item">
+            <a class="lista-item-link" href="">
+              <img
+                class="lista-item-img"
+                [src]="item.urlGif === '' ? item.urlImagem : item.urlGif"
+                alt=""
+              />
+              <div class="lista-item-textos">
+                <h3>{{ item.titulo }}</h3>
+              </div>
+            </a>
+          </li>
+        }
       </ul>
     </div>
     <div class="projetos-botao">
