@@ -1,12 +1,73 @@
 @use '../../../variaveis' as *;
 
-.sub-titulo {
+.sobre-mim {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.texto-container .sub-titulo {
   background: $gradient-destaque;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.projetos-principais {
-  
+.texto-container .texto a {
+  color: $texto-principal;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: $transicao-rapida;
+}
+
+.texto-container .texto a:hover {
+  color: $texto-suave;
+}
+
+.lista-projetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.lista-item {
+  overflow: hidden;
+  max-width: 350px;
+  height: 100%;
+  background: $superficie-destaque;
+  border: $sidebar-borda-largura solid $borda;
+  border-radius: 1.25rem;
+}
+
+.lista-item-link {
+  text-decoration: none;
+  color: $texto-principal;
+}
+
+.lista-item-img {
+  display: block;
+  width: 100%;
+}
+
+.lista-item-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-item-textos > span {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.projetos-botao {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.projetos-botao > a > span {
+  font-size: 1.25rem;
 }
