@@ -1,6 +1,6 @@
 @use '../../../variaveis' as *;
 
-.sidebar-container{
+.sidebar-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,14 +9,18 @@
 
 .sidebar {
   color: $branco-1;
-  background: $fundo-2;
-  border: 1px solid $borda-1;
+  background:
+    linear-gradient($fundo-2, $fundo-2) padding-box,
+    $sidebar-gradient border-box;
+  border: $sidebar-border solid transparent;
   border-radius: 1.25rem;
   padding: 1.25rem;
   box-shadow: $sombra-1;
   transition: $transition-1;
   max-width: clamp(16.25rem, calc(19vw + 1rem), 21.25rem);
 }
+
+// linear-gradient(45deg, #0066ff, #ff32d6);
 
 .img-avatar {
   background: $fundo-gradient-onyx;
@@ -71,14 +75,18 @@
 .email-contato > span,
 .local-contato > span {
   display: block;
-  min-width: 0; 
+  min-width: 0;
   max-width: 100%;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
-.bi-github, .bi-linkedin,
-.bi-telephone, .bi-envelope-at, .bi-pin-map {
-    font-size: 1.45rem;
-    color: #ffffff
+.bi-github,
+.bi-linkedin,
+.bi-telephone,
+.bi-envelope-at,
+.bi-pin-map,
+.bi-whatsapp {
+  font-size: 1.45rem;
+  color: #ffffff;
 }

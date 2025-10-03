@@ -7,6 +7,10 @@ $sombra-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
 $borda-1: hsl(0, 0%, 22%);
 $transition-1: 0.25s ease;
 $transition-2: 0.5s ease-in-out;
+$transform-1: 0.2s ease;
 $fundo-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
 $hover-1: #78ffff;
 $degrade-ap: linear-gradient(90deg, #e53ea8e7, #ac2fbdec 60%);
+
+$sidebar-gradient: linear-gradient(45deg, #0066ff, #ff32d6);
+$sidebar-border: 3px;

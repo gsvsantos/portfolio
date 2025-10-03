@@ -1,0 +1,59 @@
+@use '../../../variaveis' as *;
+
+.skills {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.itensHabilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem 1.25rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem 1rem;
+  align-items: start;
+}
+
+.item-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-infos .item-titulo {
+  font-weight: bolder;
+}
+
+.barra {
+  width: 100%;
+}
+
+.iconesHabilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 2rem;
+  place-items: center;
+}
+
+.iconesHabilidades .icone {
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.iconesHabilidades img {
+  transition: $transform-1;
+}
+
+.iconesHabilidades .icone:hover img {
+  transform: translateY(-2px);
+}
+
+.soft-skills-title,
+.hard-skills-title {
+  margin-bottom: 0.75rem;
+}

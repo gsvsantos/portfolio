@@ -1,1 +1,40 @@
-<p>habilidades works!</p>
+<div class="skills">
+  <div class="soft-skills">
+    <h2 class="soft-skills-title">Soft skills que transformam código em produto</h2>
+
+    <div class="itensHabilidades" role="list" aria-label="Minhas soft skills">
+      @for (item of itensHabilidades; track $index) {
+        <div class="item" role="listitem">
+          <span class="item-icone" aria-hidden="true">
+            <i class="bi {{ item.icone }} fs-1"></i>
+          </span>
+
+          <div class="item-infos">
+            <label class="item-titulo">{{ item.titulo }}</label>
+            <small class="item-descricao">{{ item.descricao }}</small>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+  <hr class="barra"/>
+  <div class="hard-skills">
+    <h2 class="hard-skills-title">Tecnologias que utilizo no dia a dia</h2>
+
+    <div class="iconesHabilidades" role="list" aria-label="Minhas hard skills tecnológicas">
+      @for (icone of iconesHabilidades; track $index) {
+        <div class="icone">
+          <img
+            width="64"
+            height="64"
+            loading="lazy"
+            decoding="async"
+            [src]="icone.imagem"
+            [alt]="icone.titulo"
+          />
+          <span>{{ icone.titulo }}</span>
+        </div>
+      }
+    </div>
+  </div>
+</div>
