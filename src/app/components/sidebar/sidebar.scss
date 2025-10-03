@@ -8,20 +8,20 @@
 }
 
 .sidebar {
-  color: $branco-1;
+  color: $branco;
   background:
-    linear-gradient($fundo-2, $fundo-2) padding-box,
-    $sidebar-gradient border-box;
-  border: $sidebar-border solid transparent;
+    linear-gradient($superficie, $superficie) padding-box,
+    $gradient-sidebar border-box;
+  border: $sidebar-borda-largura solid transparent;
   border-radius: 1.25rem;
   padding: 1.25rem;
-  box-shadow: $sombra-1;
-  transition: $transition-1;
+  box-shadow: $sombra;
+  transition: $transicao;
   max-width: clamp(16.25rem, calc(19vw + 1rem), 21.25rem);
 }
 
 .img-avatar {
-  background: $fundo-gradient-onyx;
+  background: $gradient-teste;
   border-radius: 0.94rem;
   text-align: center;
 }

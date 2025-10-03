@@ -1,39 +1,12 @@
 @use '../../../variaveis' as *;
 
-.titulo {
-  background: $degrade-ap;
+.sub-titulo {
+  background: $gradient-destaque;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  list-style: none;
-  gap: 20px;
-}
-
-.card-item {
-  flex-grow: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: $fundo-3;
-}
-
-.card-projetos {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  place-content: center;
-}
-
-.card-habilidades {
-  padding: 10px;
-}
-
-.card-contato {
-  padding: 10px;
+.projetos-principais {
+  
 }

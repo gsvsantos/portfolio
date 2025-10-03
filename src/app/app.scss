@@ -15,12 +15,12 @@
 }
 
 .card {
-  color: $branco-1;
-  background: $fundo-2;
-  border: 1px solid $borda-1;
+  color: $branco;
+  background: $superficie;
+  border: 1px solid $borda;
   border-radius: 0.62rem;
   padding: 0.94rem;
-  box-shadow: $sombra-1;
+  box-shadow: $sombra;
   width: 50rem;
   height: 50rem;
 }
