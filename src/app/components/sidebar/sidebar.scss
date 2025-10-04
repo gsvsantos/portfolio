@@ -2,7 +2,6 @@
 
 .sidebar-container {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
 }
@@ -18,6 +17,13 @@
   box-shadow: $sombra;
   transition: $transicao;
   max-width: clamp(16.25rem, calc(19vw + 1rem), 21.25rem);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3rem;
+  max-height: -webkit-max-content;
+  max-height: max-content;
+  height: 100%;
+  z-index: 1;
 }
 
 .img-avatar {

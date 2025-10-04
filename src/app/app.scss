@@ -1,10 +1,15 @@
 @use '../variaveis' as *;
 
 .main {
-  display: flex;
+  max-width: 1200px;
+  min-width: 259px;
   margin-inline: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
   justify-content: center;
-  height: 100%;
+  align-items: stretch;
+  gap: 25px;
 }
 
 .teste {
@@ -22,5 +27,5 @@
   padding: 0.94rem 2rem;
   box-shadow: $sombra;
   width: 50rem;
-  height: 50rem;
+  height: auto + 1;
 }

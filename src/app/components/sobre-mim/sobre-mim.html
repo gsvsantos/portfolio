@@ -21,7 +21,7 @@
     </div>
     <div class="projetos-itens">
       <ul class="lista-projetos">
-        @for (item of itensProjetos; track $index) {
+        @for (item of itensProjetos.slice(0, 3); track $index) {
           <li class="lista-item">
             <a class="lista-item-link" href="">
               <img

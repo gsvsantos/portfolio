@@ -1,0 +1,68 @@
+@use '../../../variaveis' as *;
+
+.lista-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.lista-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 350px;
+  height: 100%;
+  background: $superficie-destaque;
+  border: $sidebar-borda-largura solid $borda;
+  border-radius: 1.25rem;
+  transition: $transicao;
+}
+
+.lista-item-link {
+  text-decoration: none;
+  color: $texto-principal;
+}
+
+.lista-item-img {
+  display: block;
+  width: 100%;
+}
+
+.lista-item-stack {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.lista-item-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-item-titulo {
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.lista-item:hover {
+  transform: scale(1.05);
+}
+
+.lista-item-botoes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  gap: 0.5rem;
+}
+
+.projetos-botao > a > span {
+  font-size: 1.25rem;
+}
