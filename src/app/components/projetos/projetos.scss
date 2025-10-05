@@ -18,7 +18,7 @@
   background: $superficie-destaque;
   border: $sidebar-borda-largura solid $borda;
   border-radius: 1.25rem;
-  transition: $transicao;
+  transition: $transicao-rapida;
 }
 
 .lista-item-link {
@@ -36,6 +36,7 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 4px;
+  padding: 4px;
 }
 
 .lista-item-textos {
@@ -50,7 +51,7 @@
 }
 
 .lista-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .lista-item-botoes {
