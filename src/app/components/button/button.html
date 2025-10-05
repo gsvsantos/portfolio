@@ -1,12 +1,24 @@
-@if (tipo === enum.Botao) {
+@if (tipo === buttonType.Default) {
   <button class="botao" id="botao" type="button">
     <i class="bi" [ngClass]="iconeBootstrap"></i>
     {{ texto }}
   </button>
 }
-@if (tipo === enum.Link) {
-  <a class="botao botao-outline" id="link" [href]="link" [target]="target">
-    <i class="bi" [ngClass]="iconeBootstrap"></i>
-    {{ texto }}
-  </a>
+@if (tipo === buttonType.Link) {
+  @if (!ehLinkExterno) {
+    <a class="botao botao-outline" [routerLink]="link" [attr.target]="target">
+      <i class="bi" [ngClass]="iconeBootstrap"></i>
+      {{ texto }}
+    </a>
+  } @else {
+    <a
+      class="botao botao-outline"
+      [href]="link"
+      [attr.target]="target"
+      [attr.rel]="target === targetType.NovaGuia ? 'noopener noreferrer' : null"
+    >
+      <i class="bi" [ngClass]="iconeBootstrap"></i>
+      {{ texto }}
+    </a>
+  }
 }

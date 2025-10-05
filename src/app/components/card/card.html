@@ -17,14 +17,12 @@
     @if (mostrarBotoes) {
       <div class="item-botoes">
         <gs-button
-          [tipo]="enum.Botao"
+          [tipo]="buttonType.Default"
           [texto]="'Ver projeto'"
-          [link]="''"
-          [target]="targetType.NovaGuia"
           [iconeBootstrap]="'bi-window-plus'"
         ></gs-button>
         <gs-button
-          [tipo]="enum.Link"
+          [tipo]="buttonType.Link"
           [texto]="'Repositório'"
           [link]="item.urlRepositorio"
           [target]="targetType.NovaGuia"

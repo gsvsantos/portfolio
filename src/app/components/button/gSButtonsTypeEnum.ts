@@ -1,4 +1,4 @@
 export enum gSButtonsTypeEnum {
   Link = 'link',
-  Botao = 'botao'
+  Default = 'button'
 }

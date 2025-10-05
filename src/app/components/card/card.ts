@@ -17,7 +17,7 @@ export class Card {
   @Input({ required: true }) public mostrarBotoes: boolean = false;
   public itemProjetoSelecionado?: ItemProjeto;
   public targetType = targetTypesEnum;
-  public enum = gSButtonsTypeEnum;
+  public buttonType = gSButtonsTypeEnum;
 }
 
 type TiposAceitos = Certificado | ItemProjeto;
