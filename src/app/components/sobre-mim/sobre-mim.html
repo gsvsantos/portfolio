@@ -21,12 +21,20 @@
     </div>
     <div class="projetos-itens">
       @for (item of itensProjetos.slice(0, 3); track $index) {
-        <gs-card [item]="item" [mostrarStack]="false" [mostrarBotoes]="false"></gs-card>
+        <gs-card [item]="item" [mostrarStack]="false" [mostrarBotoes]="false" (visualizarItemProjeto)="aoVisualizarItemProjeto($event)"></gs-card>
       }
     </div>
     <div class="projetos-botao">
-      <gs-button [tipo]="buttonType.Link" [texto]="'Veja mais projetos'" [link]="'/projetos'" [target]="targetType.MesmaGuia" [iconeBootstrap]="''"></gs-button>
+      <gs-button [tipo]="tipoBotao.Link" [texto]="'Veja mais projetos'" [link]="'/projetos'" [target]="tipoGuia.MesmaGuia" [iconeBootstrap]="''"></gs-button>
     </div>
   </section>
   <hr class="barra" />
 </div>
+
+@if (estaModalAberta && itemProjetoSelecionado){
+<gs-modal
+  [isOpen]="estaModalAberta"
+  [item]="itemProjetoSelecionado"
+  (closed)="aoFecharModal()"
+></gs-modal>
+}

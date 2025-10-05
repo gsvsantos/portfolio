@@ -1,11 +1,17 @@
 <div class="card">
   @if (item.tipo === 'itemProjeto') {
     <div class="teste">
-      <div class="icone-olho"><i class="bi bi-eye"></i></div>
-      <img class="item-img" [src]="item.urlGif === '' ? item.urlImagem : item.urlGif" alt="" />
+      <div class="icone-olho" (click)="abrirModal()" (keydown.enter)="abrirModal()">
+        <i class="bi bi-eye"></i>
+      </div>
+      <img
+        class="item-img"
+        [src]="item.urlGif === '' ? item.urlImagem : item.urlGif"
+        [alt]="'Imagem do ' + item!.titulo"
+      />
     </div>
     @if (mostrarStack) {
-      <span class="item-stack" id="stackCard">
+      <span class="item-stack">
         @for (itemStack of item.stack; track $index) {
           <img [src]="itemStack" width="35px;" />
         }
@@ -17,15 +23,15 @@
     @if (mostrarBotoes) {
       <div class="item-botoes">
         <gs-button
-          [tipo]="buttonType.Default"
+          [tipo]="tipoBotao.Default"
           [texto]="'Ver projeto'"
           [iconeBootstrap]="'bi-window-plus'"
         ></gs-button>
         <gs-button
-          [tipo]="buttonType.Link"
+          [tipo]="tipoBotao.Link"
           [texto]="'Repositório'"
           [link]="item.urlRepositorio"
-          [target]="targetType.NovaGuia"
+          [target]="tipoGuia.NovaGuia"
           [iconeBootstrap]="'bi-github'"
         ></gs-button>
       </div>

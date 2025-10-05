@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { gSButtonsTypeEnum } from './gSButtonsTypeEnum';
 import { targetTypesEnum } from './targetTypesEnum';
 import { RouterLink } from '@angular/router';
@@ -16,8 +16,10 @@ export class Button {
   @Input() public link: string = '';
   @Input() public target!: targetTypesEnum;
   @Input({ required: true }) public iconeBootstrap: string = '';
-  public targetType = targetTypesEnum;
-  public buttonType = gSButtonsTypeEnum;
+  @Output() public modalState: EventEmitter<void> = new EventEmitter<void>();
+
+  public tipoGuia = targetTypesEnum;
+  public tipoBotao = gSButtonsTypeEnum;
 
   public get ehLinkExterno(): boolean {
     const linkNormalizado: string = (this.link ?? '').trim().toLowerCase();
@@ -27,6 +29,10 @@ export class Button {
       linkNormalizado.startsWith('mailto:') ||
       linkNormalizado.startsWith('tel:')
     );
+  }
+
+  public onActivated(): void {
+    this.modalState.emit();
   }
 }
 

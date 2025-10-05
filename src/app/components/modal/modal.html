@@ -1,0 +1,32 @@
+<div class="modal" [class.aberto]="isOpen">
+  <div class="modal-header">
+    <h5 class="modal-title">{{ item!.titulo }}</h5>
+    <span class="modal-close" (click)="requestClose()"><i class="bi bi-x-circle"></i></span>
+  </div>
+  <div class="modal-content">
+    <img
+      class="item-img"
+      [src]="item!.urlGif === '' ? item!.urlImagem : item!.urlGif"
+      [alt]="'Imagem do ' + item!.titulo"
+    />
+
+    <span class="item-stack">
+      @for (itemStack of item?.stack; track $index) {
+        <img [src]="itemStack" width="35px;" />
+      }
+    </span>
+
+    <p>{{ item?.descricao }}</p>
+  </div>
+  <div class="modal-footer">
+    <gs-button
+      [tipo]="tipoBotao.Link"
+      [texto]="'Repositório'"
+      [link]="item!.urlRepositorio"
+      [target]="tipoGuia.NovaGuia"
+      [iconeBootstrap]="'bi-github'"
+    ></gs-button>
+  </div>
+</div>
+
+<div class="modal-backdrop" (click)="requestClose()"></div>

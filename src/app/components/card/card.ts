@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Certificado } from '../../models/certificado';
 import { ItemProjeto } from '../../models/item-projetos';
 import { Button } from '../button/button';
@@ -15,9 +15,18 @@ export class Card {
   @Input({ required: true }) public item!: TiposAceitos;
   @Input({ required: true }) public mostrarStack: boolean = false;
   @Input({ required: true }) public mostrarBotoes: boolean = false;
-  public itemProjetoSelecionado?: ItemProjeto;
-  public targetType = targetTypesEnum;
-  public buttonType = gSButtonsTypeEnum;
+  @Output() public visualizarItemProjeto: EventEmitter<ItemProjeto> =
+    new EventEmitter<ItemProjeto>();
+
+  public tipoGuia = targetTypesEnum;
+  public tipoBotao = gSButtonsTypeEnum;
+
+  public abrirModal(): void {
+    const itemQualquer = this.item;
+    if (itemQualquer?.tipo === 'itemProjeto') {
+      this.visualizarItemProjeto.emit(this.item as ItemProjeto);
+    }
+  }
 }
 
 type TiposAceitos = Certificado | ItemProjeto;

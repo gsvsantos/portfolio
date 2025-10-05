@@ -1,10 +1,10 @@
-@if (tipo === buttonType.Default) {
-  <button class="botao" id="botao" type="button">
+@if (tipo === tipoBotao.Default) {
+  <button class="botao" id="botao" type="button" (click)="onActivated()">
     <i class="bi" [ngClass]="iconeBootstrap"></i>
     {{ texto }}
   </button>
 }
-@if (tipo === buttonType.Link) {
+@if (tipo === tipoBotao.Link) {
   @if (!ehLinkExterno) {
     <a class="botao botao-outline" [routerLink]="link" [attr.target]="target">
       <i class="bi" [ngClass]="iconeBootstrap"></i>
@@ -15,7 +15,7 @@
       class="botao botao-outline"
       [href]="link"
       [attr.target]="target"
-      [attr.rel]="target === targetType.NovaGuia ? 'noopener noreferrer' : null"
+      [attr.rel]="target === tipoGuia.NovaGuia ? 'noopener noreferrer' : null"
     >
       <i class="bi" [ngClass]="iconeBootstrap"></i>
       {{ texto }}

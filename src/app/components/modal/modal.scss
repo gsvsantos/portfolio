@@ -1,0 +1,97 @@
+@use '../../../variaveis' as *;
+
+:host {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+
+.modal {
+  z-index: 2;
+  width: min(500px, 92vw);
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background: $fundo;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  pointer-events: none;
+}
+
+.modal.aberto {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.modal.aberto + .modal-backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.modal-content {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.modal-close {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+
+.item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: transparent;
+  border-radius: 8px;
+  transition: $transicao-lenta;
+}
+
+.item-stack {
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 8px 0 12px;
+}
