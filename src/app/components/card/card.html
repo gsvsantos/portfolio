@@ -13,26 +13,20 @@
     </div>
     @if (mostrarBotoes) {
       <div class="item-botoes">
-        <button
-          class="botao"
-          id="btnVerProjeto"
-          type="button"
-          (click)="itemProjetoSelecionado = item"
-          data-bs-toggle="modal"
-          data-bs-target="#portfolioModal"
-        >
-          <i class="bi bi-window-plus"></i>
-          Ver projeto
-        </button>
-        <a
-          class="botao botao-outline"
-          id="urlRepositorio"
-          [href]="item.urlRepositorio"
-          target="_blank"
-        >
-          <i class="bi bi-github"></i>
-          Repositório
-        </a>
+        <gs-button
+          [tipo]="enum.Botao"
+          [texto]="'Ver projeto'"
+          [link]="''"
+          [target]="targetType.NovaGuia"
+          [iconeBootstrap]="'bi-window-plus'"
+        ></gs-button>
+        <gs-button
+          [tipo]="enum.Link"
+          [texto]="'Repositório'"
+          [link]="item.urlRepositorio"
+          [target]="targetType.NovaGuia"
+          [iconeBootstrap]="'bi-github'"
+        ></gs-button>
       </div>
     }
   } @else {

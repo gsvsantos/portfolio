@@ -1,0 +1,12 @@
+@if (tipo === enum.Botao) {
+  <button class="botao" id="botao" type="button">
+    <i class="bi" [ngClass]="iconeBootstrap"></i>
+    {{ texto }}
+  </button>
+}
+@if (tipo === enum.Link) {
+  <a class="botao botao-outline" id="link" [href]="link" [target]="target">
+    <i class="bi" [ngClass]="iconeBootstrap"></i>
+    {{ texto }}
+  </a>
+}
