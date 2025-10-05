@@ -8,7 +8,6 @@
           <span class="item-icone" aria-hidden="true">
             <i class="bi {{ item.icone }} fs-1"></i>
           </span>
-
           <div class="item-infos">
             <label class="item-titulo">{{ item.titulo }}</label>
             <small class="item-descricao">{{ item.descricao }}</small>
@@ -29,7 +28,7 @@
             height="64"
             loading="lazy"
             decoding="async"
-            [src]="icone.imagem"
+            [src]="icone.urlImagem"
             [alt]="icone.titulo"
           />
           <span>{{ icone.titulo }}</span>

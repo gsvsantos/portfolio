@@ -2,47 +2,53 @@ import { IconeHabilidade } from '../models/icone-habilidade';
 
 export const iconesHabilidades: IconeHabilidade[] = [
   {
-    imagem:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg',
     titulo: '.NET',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
     titulo: 'TypeScript',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
     titulo: 'HTML5',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
     titulo: 'CSS3',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
     titulo: 'Sass',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
     titulo: 'Angular',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
     titulo: 'RxJS',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem:
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
     titulo: 'Postgres',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
     titulo: 'Redis',
+    tipo: 'iconeHabilidade'
   },
   {
-    imagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg',
+    urlImagem: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg',
     titulo: 'Docker',
+    tipo: 'iconeHabilidade'
   },
 ];

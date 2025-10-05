@@ -3,48 +3,11 @@
     <h1>Projetos Atuais</h1>
   </div>
   <div class="projetos-itens">
-    <ul class="lista-projetos">
-      @for (item of itensProjetos; track $index) {
-        <li class="lista-item">
-          <a class="lista-item-link" href="">
-            <img
-              class="lista-item-img"
-              [src]="item.urlGif === '' ? item.urlImagem : item.urlGif"
-              alt=""
-            />
-            <span class="lista-item-stack" id="stackCard">
-              @for (itemStack of item.stack; track $index) {
-                <img [src]="itemStack" width="35px;" />
-              }
-            </span>
-            <div class="lista-item-textos">
-              <h3 class="lista-item-titulo">{{ item.titulo }}</h3>
-            </div>
-          </a>
-          <div class="lista-item-botoes">
-            <button
-              class="botao"
-              id="btnVerProjeto"
-              type="button"
-              (click)="(item)"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal"
-            >
-              <i class="bi bi-window-plus"></i>
-              Ver projeto
-            </button>
-            <a
-              class="botao botao-outline"
-              id="urlRepositorio"
-              [href]="item.urlRepositorio"
-              target="_blank"
-            >
-              <i class="bi bi-github"></i>
-              Repositório
-            </a>
-          </div>
-        </li>
-      }
-    </ul>
+    <app-card
+      [lista]="itensProjetos"
+      [mostrarStack]="true"
+      [mostrarBotoes]="true"
+      [quantidadeBlocos]="2"
+    ></app-card>
   </div>
 </section>

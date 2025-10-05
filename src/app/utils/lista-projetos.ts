@@ -13,8 +13,8 @@ export const itensProjetos: ItemProjeto[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg',
     ],
-    descricao:
-      'Web API em .NET 8 com MediatR, AutoMapper, FluentValidation, versionamento de API, cache Redis e Swagger. Projeto com Testcontainers (175 testes em C#), Docker (Dockerfile + docker-compose) e CI via GitHub Actions. Pacotes de Identity/JWT presentes.',
+    descricao: 'Web API em .NET 8 com MediatR, AutoMapper, FluentValidation, versionamento de API, cache Redis e Swagger. Projeto com Testcontainers (175 testes em C#), Docker (Dockerfile + docker-compose) e CI via GitHub Actions. Pacotes de Identity/JWT presentes.',
+    tipo: 'itemProjeto'
   },
   {
     titulo: 'Gerador de Testes',
@@ -30,8 +30,8 @@ export const itensProjetos: ItemProjeto[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg',
     ],
-    descricao:
-      'API ASP.NET Core que gera PDFs (QuestPDF) com logs estruturados em Serilog. Usa EF Core para SQL Server e PostgreSQL; pacotes de Identity + JwtBearer; suíte de testes com MSTest, Moq e Testcontainers; Dockerfile e pipeline no GitHub Actions.',
+    descricao: 'API ASP.NET Core que gera PDFs (QuestPDF) com logs estruturados em Serilog. Usa EF Core para SQL Server e PostgreSQL; pacotes de Identity + JwtBearer; suíte de testes com MSTest, Moq e Testcontainers; Dockerfile e pipeline no GitHub Actions.',
+    tipo: 'itemProjeto'
   },
   {
     titulo: 'Controle de Cinema',
@@ -47,8 +47,8 @@ export const itensProjetos: ItemProjeto[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg',
     ],
-    descricao:
-      'ASP.NET Core com EF Core (PostgreSQL), pacotes de Identity/JwtBearer e Serilog. Possui Selenium WebDriver/Support, 162 testes C#, Dockerfile e 2 workflows de GitHub Actions.',
+    descricao: 'ASP.NET Core com EF Core (PostgreSQL), pacotes de Identity/JwtBearer e Serilog. Possui Selenium WebDriver/Support, 162 testes C#, Dockerfile e 2 workflows de GitHub Actions.',
+    tipo: 'itemProjeto'
   },
   {
     titulo: 'eAgenda',
@@ -63,8 +63,8 @@ export const itensProjetos: ItemProjeto[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
     ],
-    descricao:
-      'ASP.NET Core com EF Core (SqlServer e PostgreSQL) e Serilog. Repositório com workflow de GitHub Actions.',
+    descricao: 'ASP.NET Core com EF Core (SqlServer e PostgreSQL) e Serilog. Repositório com workflow de GitHub Actions.',
+    tipo: 'itemProjeto'
   },
   {
     titulo: 'Controle de Medicamentos',
@@ -78,6 +78,7 @@ export const itensProjetos: ItemProjeto[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg',
     ],
     descricao: 'ASP.NET Core que trabalha com CSV (CsvHelper) e geração de PDFs (iTextSharp).',
+    tipo: 'itemProjeto'
   },
   {
     titulo: 'Jogo de Adivinhação',
@@ -91,6 +92,7 @@ export const itensProjetos: ItemProjeto[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg',
     ],
     descricao: 'Aplicação Angular 20 com ESLint.',
+    tipo: 'itemProjeto'
   },
   {
     titulo: 'Pokédex',
@@ -104,5 +106,6 @@ export const itensProjetos: ItemProjeto[] = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg',
     ],
     descricao: 'Aplicação Angular 20 com ESLint.',
+    tipo: 'itemProjeto'
   },
 ];

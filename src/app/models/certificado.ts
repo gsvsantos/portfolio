@@ -1,4 +1,5 @@
 export interface Certificado {
-  imagem: string;
+  tipo: 'certificado';
+  urlImagem: string;
   titulo: string;
 }

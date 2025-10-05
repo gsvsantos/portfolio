@@ -20,22 +20,11 @@
       <h1>Projetos Principais</h1>
     </div>
     <div class="projetos-itens">
-      <ul class="lista-projetos">
-        @for (item of itensProjetos.slice(0, 3); track $index) {
-          <li class="lista-item">
-            <a class="lista-item-link" href="">
-              <img
-                class="lista-item-img"
-                [src]="item.urlGif === '' ? item.urlImagem : item.urlGif"
-                alt=""
-              />
-              <div class="lista-item-textos">
-                <h3>{{ item.titulo }}</h3>
-              </div>
-            </a>
-          </li>
-        }
-      </ul>
+      <app-card
+        [lista]="itensProjetos.slice(0, 3)"
+        [mostrarStack]="false"
+        [mostrarBotoes]="false"
+      ></app-card>
     </div>
     <div class="projetos-botao">
       <a routerLink="/projetos" class="botao"><span>Veja mais projetos</span></a>

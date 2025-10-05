@@ -1,20 +1,11 @@
 <section class="certificados">
-  <div class="projetos-titulo">
+  <div class="certificados-titulo">
     <h1>Academia do Programador</h1>
     <a href="https://academiadoprogramador.net/" target="_blank"
       ><i class="bi bi-box-arrow-up-right"></i
     ></a>
   </div>
   <div class="certificados-itens">
-    <ul class="lista-certificados">
-      @for (certificado of certificados; track $index) {
-        <li class="lista-item">
-          <img class="lista-item-img" [src]="certificado.imagem" alt="" />
-          <div class="lista-item-textos">
-            <h3 class="lista-item-titulo">{{ certificado.titulo }}</h3>
-          </div>
-        </li>
-      }
-    </ul>
+    <app-card [lista]="certificados" [mostrarStack]="false" [mostrarBotoes]="false"></app-card>
   </div>
 </section>

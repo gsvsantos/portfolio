@@ -1,4 +1,5 @@
 export interface IconeHabilidade {
-  imagem: string;
+  tipo: 'iconeHabilidade';
+  urlImagem: string;
   titulo: string;
 }
