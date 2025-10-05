@@ -3,11 +3,8 @@
     <h1>Projetos Atuais</h1>
   </div>
   <div class="projetos-itens">
-    <app-card
-      [lista]="itensProjetos"
-      [mostrarStack]="true"
-      [mostrarBotoes]="true"
-      [quantidadeBlocos]="2"
-    ></app-card>
+    @for (item of itensProjetos; track $index) {
+      <gs-card [item]="item" [mostrarStack]="true" [mostrarBotoes]="true"></gs-card>
+    }
   </div>
 </section>

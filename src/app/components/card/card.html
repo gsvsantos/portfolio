@@ -1,56 +1,44 @@
-<ul
-  class="lista"
-  [class.dois-blocos]="quantidadeBlocos === 2"
-  [class.tres-blocos]="quantidadeBlocos === 3"
->
-  @for (item of lista; track $index) {
-    <li class="lista-item">
-      @if (item.tipo === 'itemProjeto') {
-        <img
-          class="lista-item-img"
-          [src]="item.urlGif === '' ? item.urlImagem : item.urlGif"
-          alt=""
-        />
-        @if (mostrarStack) {
-          <span class="lista-item-stack" id="stackCard">
-            @for (itemStack of item.stack; track $index) {
-              <img [src]="itemStack" width="35px;" />
-            }
-          </span>
+<div class="card">
+  @if (item.tipo === 'itemProjeto') {
+    <img class="item-img" [src]="item.urlGif === '' ? item.urlImagem : item.urlGif" alt="" />
+    @if (mostrarStack) {
+      <span class="item-stack" id="stackCard">
+        @for (itemStack of item.stack; track $index) {
+          <img [src]="itemStack" width="35px;" />
         }
-        <div class="lista-item-textos">
-          <h3 class="lista-item-titulo">{{ item.titulo }}</h3>
-        </div>
-        @if (mostrarBotoes) {
-          <div class="lista-item-botoes">
-            <button
-              class="botao"
-              id="btnVerProjeto"
-              type="button"
-              (click)="(item)"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal"
-            >
-              <i class="bi bi-window-plus"></i>
-              Ver projeto
-            </button>
-            <a
-              class="botao botao-outline"
-              id="urlRepositorio"
-              [href]="item.urlRepositorio"
-              target="_blank"
-            >
-              <i class="bi bi-github"></i>
-              Repositório
-            </a>
-          </div>
-        }
-      } @else {
-        <img class="lista-item-img" [src]="item.urlImagem" alt="" />
-        <div class="lista-item-textos">
-          <h3 class="lista-item-titulo">{{ item.titulo }}</h3>
-        </div>
-      }
-    </li>
+      </span>
+    }
+    <div class="item-textos">
+      <h3 class="item-titulo">{{ item.titulo }}</h3>
+    </div>
+    @if (mostrarBotoes) {
+      <div class="item-botoes">
+        <button
+          class="botao"
+          id="btnVerProjeto"
+          type="button"
+          (click)="itemProjetoSelecionado = item"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal"
+        >
+          <i class="bi bi-window-plus"></i>
+          Ver projeto
+        </button>
+        <a
+          class="botao botao-outline"
+          id="urlRepositorio"
+          [href]="item.urlRepositorio"
+          target="_blank"
+        >
+          <i class="bi bi-github"></i>
+          Repositório
+        </a>
+      </div>
+    }
+  } @else {
+    <img class="item-img" [src]="item.urlImagem" alt="" />
+    <div class="item-textos">
+      <h3 class="item-titulo">{{ item.titulo }}</h3>
+    </div>
   }
-</ul>
+</div>

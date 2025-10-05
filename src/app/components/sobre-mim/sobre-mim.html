@@ -20,11 +20,9 @@
       <h1>Projetos Principais</h1>
     </div>
     <div class="projetos-itens">
-      <app-card
-        [lista]="itensProjetos.slice(0, 3)"
-        [mostrarStack]="false"
-        [mostrarBotoes]="false"
-      ></app-card>
+      @for (item of itensProjetos.slice(0, 3); track $index) {
+        <gs-card [item]="item" [mostrarStack]="false" [mostrarBotoes]="false"></gs-card>
+      }
     </div>
     <div class="projetos-botao">
       <a routerLink="/projetos" class="botao"><span>Veja mais projetos</span></a>

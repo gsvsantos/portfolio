@@ -6,6 +6,8 @@
     ></a>
   </div>
   <div class="certificados-itens">
-    <app-card [lista]="certificados" [mostrarStack]="false" [mostrarBotoes]="false"></app-card>
+    @for (item of certificados; track $index) {
+      <gs-card [item]="item" [mostrarStack]="true" [mostrarBotoes]="true"></gs-card>
+    }
   </div>
 </section>
