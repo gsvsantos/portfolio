@@ -11,20 +11,60 @@
   border-radius: 1.25rem;
   transition: $transicao-rapida;
   justify-content: space-between;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 }
 
-.card:hover {
-  transform: scale(1.01);
+.teste {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  transition: $transicao-lenta;
+
+  &:hover {
+    background: hsla(0, 0%, 0%, 0.5);
+  }
+
+  &:hover .icone-olho {
+    opacity: 1;
+    transform: scale(1.25);
+    cursor: pointer;
+  }
+
+  &:hover .item-img {
+    opacity: 35%;
+  }
 }
 
-.item-link {
-  text-decoration: none;
+.teste .icone-olho {
+  display: flex;
   color: $texto-principal;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transition: $transicao;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: larger;
+  text-shadow: 0 0 5px $primaria, 0 0 10px $primaria, 0 0 15px $primaria;
 }
 
 .item-img {
   display: block;
   width: 100%;
+  color: transparent;
+  transition: $transicao-lenta;
+}
+
+.item-link {
+  text-decoration: none;
+  color: $texto-principal;
 }
 
 .item-stack {
