@@ -1,5 +1,19 @@
-
 @use '../../../variaveis' as *;
+
+.projetos-titulo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.projetos-titulo .bi-box-arrow-up-right {
+  text-decoration: none;
+  color: $branco;
+
+  &:hover {
+    color: $hover;
+  }
+}
 
 .lista-certificados {
   display: grid;
