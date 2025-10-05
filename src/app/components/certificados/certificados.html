@@ -1,0 +1,12 @@
+<div class="certificados">
+  <ul class="lista-certificados">
+    @for (certificado of certificados; track $index) {
+      <li class="lista-item">
+        <img class="lista-item-img" [src]="certificado.imagem" alt="" />
+        <div class="lista-item-textos">
+          <h3 class="lista-item-titulo">{{ certificado.titulo }}</h3>
+        </div>
+      </li>
+    }
+  </ul>
+</div>

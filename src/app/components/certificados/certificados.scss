@@ -1,0 +1,48 @@
+
+@use '../../../variaveis' as *;
+
+.lista-certificados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.lista-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 350px;
+  height: 100%;
+  background: $superficie-destaque;
+  border: $sidebar-borda-largura solid $borda;
+  border-radius: 1.25rem;
+  transition: $transicao-rapida;
+}
+
+.lista-item-link {
+  text-decoration: none;
+  color: $texto-principal;
+}
+
+.lista-item-img {
+  display: block;
+  width: 100%;
+}
+
+.lista-item-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-item-titulo {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.lista-item:hover {
+  transform: scale(1.01);
+}
