@@ -1,22 +1,21 @@
 import { Component } from '@angular/core';
 import { itensProjetos } from '../../utils/lista-projetos';
 import { Card } from '../card/card';
-import { Button } from '../button/button';
-import { gSButtonsTypeEnum } from '../button/gSButtonsTypeEnum';
-import { targetTypesEnum } from '../button/targetTypesEnum';
 import { Modal } from "../modal/modal";
 import { ItemProjeto } from '../../models/item-projetos';
+import { GsButton, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
 
 @Component({
   selector: 'app-sobre-mim',
-  imports: [Card, Button, Modal],
+  imports: [GsButton, Card, Modal],
   templateUrl: './sobre-mim.html',
   styleUrl: './sobre-mim.scss',
 })
 export class SobreMim {
   public itensProjetos = itensProjetos;
-  public tipoGuia = targetTypesEnum;
-  public tipoBotao = gSButtonsTypeEnum;
+  public tipoGuia = gsTiposGuiaEnum;
+  public tipoBotao = gsTiposBotaoEnum;
+  public variante = gsVariant;
   public estaModalAberta: boolean = false;
   public itemProjetoSelecionado: ItemProjeto | null = null;
 

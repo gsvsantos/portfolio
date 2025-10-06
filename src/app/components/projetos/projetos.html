@@ -4,15 +4,20 @@
   </div>
   <div class="projetos-itens">
     @for (item of itensProjetos; track $index) {
-      <gs-card [item]="item" [mostrarStack]="true" [mostrarBotoes]="true" (visualizarItemProjeto)="aoVisualizarItemProjeto($event)"></gs-card>
+      <gs-card
+        [item]="item"
+        [mostrarStack]="true"
+        [mostrarBotoes]="true"
+        (visualizarItemProjeto)="aoVisualizarItemProjeto($event)"
+      ></gs-card>
     }
   </div>
 </section>
 
-@if (estaModalAberta && itemProjetoSelecionado){
-<gs-modal
-  [isOpen]="estaModalAberta"
-  [itemProjeto]="itemProjetoSelecionado"
-  (closed)="aoFecharModal()"
-></gs-modal>
+@if (estaModalAberta && itemProjetoSelecionado) {
+  <gs-modal
+    [isOpen]="estaModalAberta"
+    [itemProjeto]="itemProjetoSelecionado"
+    (closed)="aoFecharModal()"
+  ></gs-modal>
 }

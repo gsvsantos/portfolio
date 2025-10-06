@@ -39,6 +39,15 @@
       0 0 2px $pagina-ativa-sombra;
 }
 
+@media (max-width: 1220px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0 0 8px 0;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .navbar {
     flex-wrap: wrap;

@@ -7,7 +7,7 @@
       <img
         class="item-img"
         [src]="item.urlGif === '' ? item.urlImagem : item.urlGif"
-        [alt]="'Imagem do ' + item!.titulo"
+        alt="Imagem do {{ item!.titulo }}"
       />
     </div>
     @if (mostrarStack) {
@@ -24,17 +24,18 @@
       <div class="item-botoes">
         <gs-button
           [tipo]="tipoBotao.Default"
-          [texto]="'Ver projeto'"
-          [iconeBootstrap]="'bi-window-plus'"
+          texto="Ver projeto"
+          iconeBootstrap="bi-window-plus"
           (click)="abrirModal()"
           (keydown.enter)="abrirModal()"
         ></gs-button>
         <gs-button
           [tipo]="tipoBotao.Link"
-          [texto]="'Repositório'"
+          texto="Repositório"
           [link]="item.urlRepositorio"
           [target]="tipoGuia.NovaGuia"
-          [iconeBootstrap]="'bi-github'"
+          iconeBootstrap="bi-github"
+          [variant]="variante.Outline"
         ></gs-button>
       </div>
     }
