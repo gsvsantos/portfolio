@@ -33,7 +33,7 @@
 }
 
 .img-avatar img {
-  width: 20dvh;
+    width: 9rem;
 }
 
 .sobremim {
@@ -98,4 +98,10 @@
 .bi-whatsapp {
   font-size: 1.45rem;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .img-avatar img {
+    width: 11rem;
+  }
 }
