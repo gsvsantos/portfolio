@@ -41,3 +41,10 @@
 .projetos-botao > a > span {
   font-size: 1.25rem;
 }
+
+@media (max-width: 425px) {
+  .projetos-itens {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}

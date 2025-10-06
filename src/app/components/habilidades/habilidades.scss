@@ -53,3 +53,10 @@
 .hard-skills-title {
   margin-bottom: 0.75rem;
 }
+
+@media (max-width: 425px) {
+  .iconesHabilidades {
+    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+
+  }
+}

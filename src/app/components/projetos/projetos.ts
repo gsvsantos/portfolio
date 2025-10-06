@@ -18,7 +18,6 @@ export class Projetos {
   public aoVisualizarItemProjeto(itemProjeto: ItemProjeto): void {
     this.itemProjetoSelecionado = itemProjeto;
     this.estaModalAberta = true;
-    console.log(itemProjeto);
   }
 
   public aoFecharModal(): void {

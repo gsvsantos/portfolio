@@ -15,10 +15,14 @@
   padding-inline-start: 0;
 }
 
-.lista {
-  grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .projetos-itens {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.lista-item-titulo {
-  font-size: 1.45rem;
+@media (max-width: 425px) {
+  .projetos-itens {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -7,8 +7,8 @@
   list-style-type: none;
   padding-bottom: 0.5rem;
   box-shadow: 0px 3px 2px -2px rgba(207, 207, 207, 0.753);
-  padding-left: auto;
-  padding-right: auto;
+  padding-left: 0;
+  padding-right: 0;
   justify-content: space-evenly;
 }
 
@@ -25,4 +25,14 @@
   &:hover {
     color: $hover;
   }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0 0 8px 0;
+    justify-content: center;
+  }
+  .nav-item { font-size: 1rem; }
 }

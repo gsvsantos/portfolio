@@ -18,7 +18,6 @@ export class Certificados {
   public aoVisualizarCertificado(certificado: Certificado): void {
     this.certificadoSelecionado = certificado;
     this.estaModalAberta = true;
-    console.log(certificado);
   }
 
   public aoFecharModal(): void {
