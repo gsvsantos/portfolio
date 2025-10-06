@@ -3,7 +3,7 @@ import { ItemProjeto } from '../models/item-projetos';
 export const itensProjetos: ItemProjeto[] = [
   {
     titulo: 'Valet WebAPI',
-    urlImagem: '',
+    urlImagem: 'https://i.imgur.com/NxVXC5I.png',
     urlGif: 'https://i.imgur.com/tIFABjc.gif',
     urlRepositorio: 'https://github.com/gsvsantos/GestaoDeEstacionamento-WebAPI',
     stack: [
@@ -20,7 +20,7 @@ export const itensProjetos: ItemProjeto[] = [
   {
     titulo: 'Valet Angular',
     urlImagem: 'https://placehold.co/1200x800?text=Em Desenvolvimento',
-    urlGif: '',
+    urlGif: 'https://placehold.co/1200x800?text=Em Desenvolvimento',
     urlRepositorio: '',
     stack: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
@@ -33,7 +33,7 @@ export const itensProjetos: ItemProjeto[] = [
   },
   {
     titulo: 'Gerador de Testes',
-    urlImagem: '',
+    urlImagem: 'https://i.imgur.com/o2s0WaV.png',
     urlGif: 'https://i.imgur.com/eKoM8DM.gif',
     urlRepositorio: 'https://github.com/gsvsantos/GeradorDeTestes',
     stack: [
@@ -51,7 +51,7 @@ export const itensProjetos: ItemProjeto[] = [
   },
   {
     titulo: 'Controle de Cinema',
-    urlImagem: 'https://placehold.co/1200x800?text=Screenshot+indispon%C3%ADvel',
+    urlImagem: 'https://i.imgur.com/Ng0MuAs.png',
     urlGif: 'https://i.imgur.com/m2VCvJN.gif',
     urlRepositorio: 'https://github.com/gsvsantos/ControleDeCinema',
     stack: [
