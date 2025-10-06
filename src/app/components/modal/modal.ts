@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ItemProjeto } from '../../models/item-projetos';
 import { Certificado } from '../../models/certificado';
-import { GsButton, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
+import { GsButtons, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
 
 @Component({
   selector: 'gs-modal',
-  imports: [GsButton],
+  imports: [GsButtons],
   templateUrl: './modal.html',
   styleUrl: './modal.scss',
 })

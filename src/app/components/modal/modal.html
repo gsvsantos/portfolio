@@ -18,13 +18,14 @@
       </span>
 
       <p>{{ itemProjeto!.descricao }}</p>
-      <gs-button
+      <gs-buttons
         [tipo]="tipoBotao.Link"
         texto="Ver projeto"
         [link]="itemProjeto!.urlRepositorio"
         [target]="tipoGuia.NovaGuia"
         iconeBootstrap="bi-github"
-      ></gs-button>
+        [variant]="variante.Outline"
+      ></gs-buttons>
     } @else if (certificado) {
       <img
         class="certificado-img"

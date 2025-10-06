@@ -22,21 +22,21 @@
     </div>
     @if (mostrarBotoes) {
       <div class="item-botoes">
-        <gs-button
+        <gs-buttons
           [tipo]="tipoBotao.Default"
           texto="Ver projeto"
           iconeBootstrap="bi-window-plus"
           (click)="abrirModal()"
           (keydown.enter)="abrirModal()"
-        ></gs-button>
-        <gs-button
+        ></gs-buttons>
+        <gs-buttons
           [tipo]="tipoBotao.Link"
           texto="Repositório"
           [link]="item.urlRepositorio"
           [target]="tipoGuia.NovaGuia"
           iconeBootstrap="bi-github"
           [variant]="variante.Outline"
-        ></gs-button>
+        ></gs-buttons>
       </div>
     }
   } @else {

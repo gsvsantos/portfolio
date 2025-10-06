@@ -3,11 +3,11 @@ import { itensProjetos } from '../../utils/lista-projetos';
 import { Card } from '../card/card';
 import { Modal } from "../modal/modal";
 import { ItemProjeto } from '../../models/item-projetos';
-import { GsButton, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
+import { GsButtons, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
 
 @Component({
   selector: 'app-sobre-mim',
-  imports: [GsButton, Card, Modal],
+  imports: [GsButtons, Card, Modal],
   templateUrl: './sobre-mim.html',
   styleUrl: './sobre-mim.scss',
 })

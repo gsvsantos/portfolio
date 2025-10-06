@@ -30,12 +30,14 @@
       }
     </div>
     <div class="projetos-botao">
-      <gs-button
+      <gs-buttons
         [tipo]="tipoBotao.Link"
         texto="Veja mais projetos"
         [link]="'/projetos'"
         [target]="tipoGuia.MesmaGuia"
-      ></gs-button>
+        iconeBootstrap="bi-folder-symlink-fill"
+        [variant]="variante.Outline"
+      ></gs-buttons>
     </div>
   </section>
   <hr class="barra" />

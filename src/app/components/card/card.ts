@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Certificado } from '../../models/certificado';
 import { ItemProjeto } from '../../models/item-projetos';
-import { GsButton, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
+import { GsButtons, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
 
 @Component({
   selector: 'gs-card',
-  imports: [GsButton],
+  imports: [GsButtons],
   templateUrl: './card.html',
   styleUrl: './card.scss',
 })
