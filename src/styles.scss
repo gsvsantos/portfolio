@@ -22,3 +22,22 @@ h2 {
 .barra {
   width: 100%;
 }
+
+/* ===== Scrollbar CSS By stephenpaton-tech ===== */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $primaria #ffffff00;
+}
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primaria;
+  border-radius: 10px;
+  border: 3px solid #ffffff00;
+}

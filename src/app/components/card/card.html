@@ -1,6 +1,6 @@
 <div class="card">
   @if (item.tipo === 'itemProjeto') {
-    <div class="teste">
+    <div class="sobreposicao-olho">
       <div class="icone-olho" (click)="abrirModal()" (keydown.enter)="abrirModal()">
         <i class="bi bi-eye"></i>
       </div>
@@ -40,7 +40,7 @@
       </div>
     }
   } @else {
-    <div class="teste">
+    <div class="sobreposicao-olho">
       <div class="icone-olho" (click)="abrirModal()"><i class="bi bi-eye"></i></div>
       <img class="item-img" [src]="item.urlImagem" alt="" />
     </div>

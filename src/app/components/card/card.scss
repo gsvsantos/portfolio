@@ -17,12 +17,11 @@
   }
 }
 
-.teste {
+.sobreposicao-olho {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
-  border-radius: 1.25rem  1.25rem 0 0;
   transition: $transicao-lenta;
 
   &:hover {
@@ -40,7 +39,7 @@
   }
 }
 
-.teste .icone-olho {
+.sobreposicao-olho .icone-olho {
   display: flex;
   color: $texto-principal;
   position: absolute;
