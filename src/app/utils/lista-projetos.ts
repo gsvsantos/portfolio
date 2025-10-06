@@ -52,8 +52,8 @@ export const itensProjetos: ItemProjeto[] = [
   {
     titulo: 'Controle de Cinema',
     urlImagem: 'https://placehold.co/1200x800?text=Screenshot+indispon%C3%ADvel',
-    urlGif: '',
-    urlRepositorio: '',
+    urlGif: 'https://i.imgur.com/m2VCvJN.gif',
+    urlRepositorio: 'https://github.com/gsvsantos/ControleDeCinema',
     stack: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
@@ -69,9 +69,9 @@ export const itensProjetos: ItemProjeto[] = [
   },
   {
     titulo: 'eAgenda',
-    urlImagem: 'https://placehold.co/1200x800?text=Screenshot+indispon%C3%ADvel',
-    urlGif: '',
-    urlRepositorio: '',
+    urlImagem: 'https://i.imgur.com/8NFlJZu.png',
+    urlGif: 'https://i.imgur.com/AjTFnSW.gif',
+    urlRepositorio: 'https://github.com/gsvsantos/eAgenda',
     stack: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
@@ -86,9 +86,9 @@ export const itensProjetos: ItemProjeto[] = [
   },
   {
     titulo: 'Controle de Medicamentos',
-    urlImagem: 'https://placehold.co/1200x800?text=Screenshot+indispon%C3%ADvel',
-    urlGif: '',
-    urlRepositorio: '',
+    urlImagem: 'https://i.imgur.com/L7bAsUh.png',
+    urlGif: 'https://i.imgur.com/7gGLPvq.gif',
+    urlRepositorio: 'https://github.com/gsvsantos/ControleDeMedicamentos/tree/aspnet',
     stack: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
@@ -100,9 +100,9 @@ export const itensProjetos: ItemProjeto[] = [
   },
   {
     titulo: 'Jogo de Adivinhação',
-    urlImagem: 'https://placehold.co/1200x800?text=Screenshot+indispon%C3%ADvel',
-    urlGif: '',
-    urlRepositorio: '',
+    urlImagem: 'https://i.imgur.com/oxK3tWk.png',
+    urlGif: 'https://i.imgur.com/euUs6Bo.gif',
+    urlRepositorio: 'https://github.com/gsvsantos/JogoDeAdivinhacao.TypeScript',
     stack: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
@@ -114,13 +114,13 @@ export const itensProjetos: ItemProjeto[] = [
   },
   {
     titulo: 'Pokédex',
-    urlImagem: 'https://placehold.co/1200x800?text=Screenshot+indispon%C3%ADvel',
-    urlGif: '',
-    urlRepositorio: '',
+    urlImagem: 'https://i.imgur.com/3ZMI43u.png',
+    urlGif: 'https://i.imgur.com/iI2oDiZ.gif',
+    urlRepositorio: 'https://github.com/gsvsantos/pokedex',
     stack: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-      // 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg', <- logo mais será implementado
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg',
     ],
     descricao: 'Aplicação Angular 20 com ESLint.',
