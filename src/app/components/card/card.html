@@ -26,6 +26,8 @@
           [tipo]="tipoBotao.Default"
           [texto]="'Ver projeto'"
           [iconeBootstrap]="'bi-window-plus'"
+          (click)="abrirModal()"
+          (keydown.enter)="abrirModal()"
         ></gs-button>
         <gs-button
           [tipo]="tipoBotao.Link"
@@ -38,7 +40,7 @@
     }
   } @else {
     <div class="teste">
-      <div class="icone-olho"><i class="bi bi-eye"></i></div>
+      <div class="icone-olho" (click)="abrirModal()"><i class="bi bi-eye"></i></div>
       <img class="item-img" [src]="item.urlImagem" alt="" />
     </div>
     <div class="item-textos">

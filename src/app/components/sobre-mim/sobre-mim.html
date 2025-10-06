@@ -34,7 +34,7 @@
 @if (estaModalAberta && itemProjetoSelecionado){
 <gs-modal
   [isOpen]="estaModalAberta"
-  [item]="itemProjetoSelecionado"
+  [itemProjeto]="itemProjetoSelecionado"
   (closed)="aoFecharModal()"
 ></gs-modal>
 }

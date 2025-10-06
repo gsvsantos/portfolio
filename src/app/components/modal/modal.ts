@@ -3,6 +3,7 @@ import { ItemProjeto } from '../../models/item-projetos';
 import { Button } from '../button/button';
 import { gSButtonsTypeEnum } from '../button/gSButtonsTypeEnum';
 import { targetTypesEnum } from '../button/targetTypesEnum';
+import { Certificado } from '../../models/certificado';
 
 @Component({
   selector: 'gs-modal',
@@ -12,7 +13,8 @@ import { targetTypesEnum } from '../button/targetTypesEnum';
 })
 export class Modal {
   @Input({ required: true }) public isOpen: boolean = false;
-  @Input() public item: ItemProjeto | null = null;
+  @Input() public itemProjeto: ItemProjeto | null = null;
+  @Input() public certificado: Certificado | null = null;
 
   @Output() public closed: EventEmitter<void> = new EventEmitter<void>();
   public tipoGuia = targetTypesEnum;

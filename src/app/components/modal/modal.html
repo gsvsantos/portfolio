@@ -1,31 +1,37 @@
 <div class="modal" [class.aberto]="isOpen">
   <div class="modal-header">
-    <h5 class="modal-title">{{ item!.titulo }}</h5>
+    <h5 class="modal-title">{{ (itemProjeto?.titulo ?? certificado!.titulo) }}</h5>
     <span class="modal-close" (click)="requestClose()"><i class="bi bi-x-circle"></i></span>
   </div>
   <div class="modal-content">
-    <img
-      class="item-img"
-      [src]="item!.urlGif === '' ? item!.urlImagem : item!.urlGif"
-      [alt]="'Imagem do ' + item!.titulo"
-    />
+    @if (itemProjeto) {
+      <img
+        class="item-projeto-img"
+        [src]="itemProjeto!.urlGif === '' ? itemProjeto!.urlImagem : itemProjeto!.urlGif"
+        [alt]="'Imagem do ' + itemProjeto!.titulo"
+      />
 
-    <span class="item-stack">
-      @for (itemStack of item?.stack; track $index) {
-        <img [src]="itemStack" width="35px;" />
-      }
-    </span>
+      <span class="item-projeto-stack">
+        @for (itemStack of itemProjeto!.stack; track $index) {
+          <img [src]="itemStack" width="35px;" />
+        }
+      </span>
 
-    <p>{{ item?.descricao }}</p>
-  </div>
-  <div class="modal-footer">
-    <gs-button
-      [tipo]="tipoBotao.Link"
-      [texto]="'Repositório'"
-      [link]="item!.urlRepositorio"
-      [target]="tipoGuia.NovaGuia"
-      [iconeBootstrap]="'bi-github'"
-    ></gs-button>
+      <p>{{ itemProjeto!.descricao }}</p>
+      <gs-button
+        [tipo]="tipoBotao.Link"
+        [texto]="'Repositório'"
+        [link]="itemProjeto!.urlRepositorio"
+        [target]="tipoGuia.NovaGuia"
+        [iconeBootstrap]="'bi-github'"
+      ></gs-button>
+    } @else if (certificado) {
+      <img
+        class="certificado-img"
+        [src]="certificado.urlImagem"
+        [alt]="'Imagem do ' + certificado!.titulo"
+      />
+    }
   </div>
 </div>
 

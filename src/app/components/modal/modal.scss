@@ -64,13 +64,6 @@
   overflow: auto;
 }
 
-.modal-footer {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-  margin-top: 12px;
-}
-
 .modal-close {
   cursor: pointer;
   display: inline-flex;
@@ -78,8 +71,8 @@
   border-radius: 6px;
 }
 
-
-.item-img {
+.item-projeto-img,
+.certificado-img {
   display: block;
   width: 100%;
   height: auto;
@@ -88,7 +81,7 @@
   transition: $transicao-lenta;
 }
 
-.item-stack {
+.item-projeto-stack {
   display: inline-flex;
   gap: 6px;
   flex-wrap: wrap;
