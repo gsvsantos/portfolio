@@ -18,17 +18,21 @@ export const itensProjetos: ItemProjeto[] = [
     tipo: 'itemProjeto',
   },
   {
-    titulo: 'Valet Angular',
-    urlImagem: 'https://placehold.co/1200x800?text=Em Desenvolvimento',
-    urlGif: 'https://placehold.co/1200x800?text=Em Desenvolvimento',
-    urlRepositorio: '',
+    titulo: 'Claquete',
+    urlImagem: 'https://i.imgur.com/MYdlQKT.png',
+    urlGif: 'https://i.imgur.com/1Saz79B.gif',
+    urlRepositorio: 'https://github.com/gsvsantos/claquete',
     stack: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-      // 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg', <- logo mais será implementado
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prettier/prettier-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg',
     ],
-    descricao: `Meu projeto atual, um front-end em Angular para consumir a API multi-tenant. Focado em Formulários Reativos e HttpClient/Interceptors.`,
+    descricao:
+      'Aplicação Angular 20 para catálogo TMDB com Router + guard de verificação da API Key, busca reativa (Reactive Forms), i18n (Transloco: en-US, pt-BR, es-ES), favoritos em LocalStorage, carrosséis com diretiva [clqt-hover-scroll] e toasts (ngx-toastr). Qualidade e tooling: SCSS modular, ESLint + Prettier, bootstrap-icons e gs-buttons; integração TMDb (service, models, pipe) e deploy via angular-cli-ghpages.',
     tipo: 'itemProjeto',
   },
   {
