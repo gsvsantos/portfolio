@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ItemProjeto } from '../../models/item-projetos';
 import { Certificado } from '../../models/certificado';
-import { GsButtons, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
+import { GsButtons, gsButtonTypeEnum, gsTabTargetEnum, gsVariant } from 'gs-buttons';
 
 @Component({
   selector: 'gs-modal',
@@ -15,8 +15,8 @@ export class Modal {
   @Input() public certificado: Certificado | null = null;
 
   @Output() public closed: EventEmitter<void> = new EventEmitter<void>();
-  public tipoGuia = gsTiposGuiaEnum;
-  public tipoBotao = gsTiposBotaoEnum;
+  public tipoBotao = gsButtonTypeEnum;
+  public tipoGuia = gsTabTargetEnum;
   public variante = gsVariant;
 
   public requestClose(): void {

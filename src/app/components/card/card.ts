@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Certificado } from '../../models/certificado';
 import { ItemProjeto } from '../../models/item-projetos';
-import { GsButtons, gsTiposBotaoEnum, gsTiposGuiaEnum, gsVariant } from 'gs-buttons';
+import { GsButtons, gsButtonTypeEnum, gsTabTargetEnum, gsVariant } from 'gs-buttons';
 
 @Component({
   selector: 'gs-card',
@@ -18,8 +18,8 @@ export class Card {
   @Output() public visualizarItemCertificado: EventEmitter<Certificado> =
     new EventEmitter<Certificado>();
 
-  public tipoGuia = gsTiposGuiaEnum;
-  public tipoBotao = gsTiposBotaoEnum;
+  public tipoBotao = gsButtonTypeEnum;
+  public tipoGuia = gsTabTargetEnum;
   public variante = gsVariant;
 
   public abrirModal(): void {

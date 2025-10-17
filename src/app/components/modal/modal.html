@@ -19,10 +19,10 @@
 
       <p>{{ itemProjeto!.descricao }}</p>
       <gs-buttons
-        [tipo]="tipoBotao.Link"
-        texto="Ver projeto"
+        [buttonType]="tipoBotao.Link"
+        text="Ver projeto"
         [link]="itemProjeto!.urlRepositorio"
-        [target]="tipoGuia.NovaGuia"
+        [target]="tipoGuia.NewTab"
         iconeBootstrap="bi-github"
         [variant]="variante.Outline"
       ></gs-buttons>
