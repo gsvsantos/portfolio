@@ -11,7 +11,7 @@ import { Modal } from '../modal/modal';
   styleUrl: './certificados.scss',
 })
 export class Certificados {
-  public certificados = certificados;
+  public certificados = certificados.reverse();
   public estaModalAberta: boolean = false;
   public certificadoSelecionado: Certificado | null = null;
 
