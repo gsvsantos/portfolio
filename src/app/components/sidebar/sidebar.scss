@@ -27,13 +27,18 @@
 }
 
 .img-avatar {
-  background: $gradient-teste;
-  border-radius: 0.94rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .img-avatar img {
-    width: 9rem;
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  box-shadow: 0 0 15px rgba(172, 47, 189, 0.925);
 }
 
 .sobremim {
