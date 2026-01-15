@@ -2,6 +2,24 @@ import { ItemProjeto } from '../models/item-projetos';
 
 export const itensProjetos: ItemProjeto[] = [
   {
+    titulo: 'Locadora de Automóveis',
+    urlImagem: 'https://i.imgur.com/g16ZCPj.png',
+    urlGif: 'https://i.imgur.com/7qXPXK6.gif',
+    urlRepositorio: 'https://github.com/gsvsantos/locadora-de-automoveis',
+    stack: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rxjs/rxjs-original.svg',
+    ],
+    descricao:
+      'Projeto Full Stack (.NET 8 + Angular 20) aplicando Clean Architecture e CQRS (MediatR). Backend robusto com EF Core, FluentValidation, testes de integração com Testcontainers e Auth via Identity/JWT. Frontend com fluxos reativos avançados (RxJS), formulários dinâmicos complexos (Reactive Forms), diretivas customizadas, i18n (Transloco) e componentes reutilizáveis.',
+    tipo: 'itemProjeto',
+  },
+  {
     titulo: 'Valet WebAPI',
     urlImagem: 'https://i.imgur.com/NxVXC5I.png',
     urlGif: 'https://i.imgur.com/tIFABjc.gif',
